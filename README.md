@@ -5,6 +5,7 @@ There have been recent efforts to combine each of these resources: REDCap and OM
 
 # Dependencies
 All listed hyperlinks navigate to the intended release, which are also included above as submodules
+
 REDCap v10.2.3
 * External Modules:
   * FHIR Ontology Autocomplete Module v0.2
