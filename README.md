@@ -20,4 +20,4 @@ Redmatch v1.2.1
 # Setup and Installation
 *How do you set up your environment correctly to use REDHotOMOP?*
 
-Provided below are the instructions 
+Provided below are the instructions (include changes done to make other repositories work)
