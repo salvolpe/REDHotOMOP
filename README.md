@@ -14,3 +14,10 @@ OMOPonFHIR v1.2.0
 * OMOPv5 instance
 
 Redmatch v1.2.1
+
+# System Architecture
+
+# Setup and Installation
+*How do you set up your environment correctly to use REDHotOMOP?*
+
+Provided below are the instructions 
