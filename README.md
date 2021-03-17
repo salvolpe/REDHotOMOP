@@ -8,14 +8,15 @@ All listed hyperlinks navigate to the intended release, which are also included 
 
 REDCap v10.2.3
 * External Modules:
-  * FHIR Ontology Autocomplete Module v0.2
+  * FHIR Ontology Autocomplete Module v0.2 (accessible through local REDCap's *External Module* section)
 
-OMOPonFHIR v1.2.0
+[OMOPonFHIR v1.2.0](https://github.com/omoponfhir/omoponfhir-main/releases/tag/v1.2.0)
 * OMOPv5 instance
 
-Redmatch v1.2.1
+[Redmatch v1.2.1](https://github.com/aehrc/redmatch/releases/tag/1.2.1)
 
 # System Architecture
+![REDHot_OMOP_Prototype](https://user-images.githubusercontent.com/37944330/111510503-386a6000-8724-11eb-8bb6-4c02c4840528.png)
 
 # Setup and Installation
 *How do you set up your environment correctly to use REDHotOMOP?*
