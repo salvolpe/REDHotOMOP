@@ -19,10 +19,8 @@ REDCap v10.2.3
 # System Architecture
 ![REDHot_OMOP_Prototype](https://user-images.githubusercontent.com/37944330/111510503-386a6000-8724-11eb-8bb6-4c02c4840528.png)
 
-# Setup and Installation
+# Setup
 *How do you set up your environment correctly to use REDHotOMOP?*
-
-Provided below are the instructions for setting up the various external components for your system:
 
 ## REDCap
 If you do not already have REDCap, you will need to contact a member of your institution to secure access to the REDCap system. Protocols and availability differs from place to place. Make sure that your machine meets the [technical requirements](https://projectredcap.org/software/requirements/). There are two different installation guides you can examine based on your OS:
@@ -65,5 +63,5 @@ If you do not already have REDCap, you will need to contact a member of your ins
 
 ## REDMatch (TBD)
 
-## REDHotOMOP
+# Installation
 * (TBD) Clone this repository and install with the External Modules directions from REDCap
