@@ -58,6 +58,15 @@ If you do not already have REDCap, you will need to contact a member of your ins
       - currentSchema, listed after POSTGRES_DB
       - JDBC_USERNAME, listed after POSTGRES_USER
       - JDBC_PASSWORD, listed after POSTGRES_PASSWORD
+  * It is strongly recommended that you build and run rather than use dockercompose. If you try dockercompose and find a 404 error when trying to load the HAPI FHIR server, even if your database and omoponfhir containers are connected, do the following:
+    ```
+    docker network create network_name
+    docker network connect network_name your_database_container_name
+    docker network connect network_name your_omoponfhir_container_name
+    sudo docker build -t omoponfhir . 
+    sudo docker run --name omoponfhir --network=network_name -p 8080:8080 -d omoponfhir:latest
+    ```
+    * This route only works when your database is in a Docker container. If that is not the case, you may not come across this issue.
 
 ### (TBD) - How to load ConceptMaps into OMOPonFHIR
 
