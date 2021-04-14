@@ -50,7 +50,7 @@ If you do not already have REDCap, you will need to contact a member of your ins
   * OMOPonFHIR defaults to READ-ONLY, but you will need to write to this server. Navigate to `omoponfhir-main/omoponfhir-r4-server/src/main/webapp/WEB-INF/web.xml` where you will need to change `readOnly` to `False` at line 95.
   * If you use the `omopv5fhir-pgsql` server, you need to set the environment (ENV) variables in the `omoponfhir-main` Dockerfile as follows:
   ```
-  ENV JDBC_URL=jdbc:postgresql://smart-postgres:5432/postgres?currentSchema=omop_v5 JDBC_USERNAME=omop_v5 JDBC_PASSWORD=i3lworks
+  ENV JDBC_URL=jdbc:postgresql://smart-postgres:5432/postgres?currentSchema=omop_v5 JDBC_USERNAME=omop_v5 JDBC_PASSWORD=i3lworks AUTH_BASIC=your_username:your_secret
   ```
   * To better understand the variables, particularly when working with the `omopv5fhir-pgsql` server, here is a breakdown of the variables in the Dockerfile:
     * JDBC_URL=jdbc:[dbclient]://[container-name]:[port-number]/[dbclient-command-form]?currentSchema=[POSTGRES_DB]
