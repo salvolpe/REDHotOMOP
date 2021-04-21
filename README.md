@@ -70,7 +70,20 @@ If you do not already have REDCap, you will need to contact a member of your ins
 
 ### (TBD) - How to load ConceptMaps into OMOPonFHIR
 
-## REDMatch (TBD)
+## Redmatch (TBD)
+* Redmatch relies on a Docker image to install, including the usage of docker-compose. 
+* After running `mvn clean verify` as specified in the README, be sure to do the following:
+  * Change the host/port number from 8080 to something else (e.g. 8081, 8082, etc.) in the following files
+    * redmatch/ui/.env – REACT_APP_REDMATCH_URL='http://localhost:8082'
+  * If `docker-compose up -d` gives you an error similar to the one below, be sure to append `sudo` before `docker-compose`
+    ```
+     => ERROR [internal] load metadata for docker.io/jboss/keycloak:latest                                                                                                              0.2s
+     ------
+     > [internal] load metadata for docker.io/jboss/keycloak:latest:
+     > ------
+     > failed to solve with frontend dockerfile.v0: failed to create LLB definition: rpc error: code = Unknown desc = open /Users/sal/.docker/.token_seed: permission denied
+     > ERROR: Service 'keycloak' failed to build
+    ```
 
 # Installation
 * (TBD) Clone this repository and install with the External Modules directions from REDCap
