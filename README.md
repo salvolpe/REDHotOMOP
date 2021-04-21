@@ -15,6 +15,7 @@ REDCap v10.2.3
 * This requires [Docker](https://docs.docker.com/get-docker/) installed on your machine to instantiate and maintain the servers
 
 [Redmatch v1.2.1](https://github.com/aehrc/redmatch/releases/tag/1.2.1)
+* mvn - Recommended that you install through [homebrew](https://brew.sh) with `brew install mvn`
 
 # System Architecture
 ![REDHot_OMOP_Prototype](https://user-images.githubusercontent.com/37944330/111510503-386a6000-8724-11eb-8bb6-4c02c4840528.png)
@@ -84,6 +85,7 @@ If you do not already have REDCap, you will need to contact a member of your ins
      > failed to solve with frontend dockerfile.v0: failed to create LLB definition: rpc error: code = Unknown desc = open /Users/sal/.docker/.token_seed: permission denied
      > ERROR: Service 'keycloak' failed to build
     ```
-
+* In order to access the Redmatch interface, you will need an account. To do so, after the Docker containers are running, navigate to http://localhost:10001/auth/admin/master/console/#/realms/Aehrc/users and add a new user.
+  * After you have a user, you can login at http://localhost:8888
 # Installation
 * (TBD) Clone this repository and install with the External Modules directions from REDCap
