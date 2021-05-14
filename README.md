@@ -18,7 +18,7 @@ REDCap v10.2.3
 * mvn - Recommended that you install through [homebrew](https://brew.sh) with `brew install mvn`
 
 # System Architecture
-![REDHot_OMOP_Prototype](https://user-images.githubusercontent.com/37944330/118322126-9e792680-b4cc-11eb-972f-65c7c371b9b3.png)
+![REDHot_OMOP_Prototype](https://user-images.githubusercontent.com/37944330/118322427-18a9ab00-b4cd-11eb-9859-0e6855aa0373.png)
 
 # Setup
 *How do you set up your environment correctly to use REDHotOMOP?*
