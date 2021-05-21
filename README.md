@@ -47,6 +47,7 @@ If you do not already have REDCap, you will need to contact a member of your ins
 
 ## OMOPonFHIR
 * *Prior to running OMOPonFHIR*, you will need to have an OMOP instance. If you do not have one yet, or want to connect to a test server, you can use [this OMOPv5 pgSQL server](https://github.com/omoponfhir/omopv5fhir-pgsql/) from GA Tech. (This also requires Docker)
+  * If you are taking this route, be mindful that the SQL server defaults to port 5432. So you should change the port number when you perform the run command through docker to 5438:5432. This will avoid issues with keycloak (a service within Redmatch) accidently finding your SQL server and being unable to access its REDCap project handling service
 * Follow the steps in the README for OMOPonFHIR for installation with the following considerations/adjustments:
   * OMOPonFHIR defaults to READ-ONLY, but you will need to write to this server. Navigate to `omoponfhir-main/omoponfhir-r4-server/src/main/webapp/WEB-INF/web.xml` where you will need to change `readOnly` to `False` at line 95.
   * If you use the `omopv5fhir-pgsql` server, you need to set the environment (ENV) variables in the `omoponfhir-main` Dockerfile as follows:
@@ -66,7 +67,7 @@ If you do not already have REDCap, you will need to contact a member of your ins
     docker network connect network_name your_database_container_name
     docker network connect network_name your_omoponfhir_container_name
     sudo docker build -t omoponfhir . 
-    sudo docker run --name omoponfhir --network=omop -p 8090:8080 -d omoponfhir:latest
+    sudo docker run --name omoponfhir --network=omop -p 8080:8080 -d omoponfhir:latest
     ```
     * This route only works when your database is in a Docker container. If that is not the case, you may not come across this issue.
 
@@ -86,5 +87,6 @@ If you do not already have REDCap, you will need to contact a member of your ins
     ```
 * In order to access the Redmatch interface, you will need an account. To do so, after the Docker containers are running, navigate to http://localhost:10001/auth/admin/master/console/#/realms/Aehrc/users and add a new user.
   * After you have a user, you can login at http://localhost:8888
+* Redmatch and OMOPonFHIR both use 8080 as a default, so be sure to change the ports environment variable in the docker-compose.yml for Redmatch under keyclock to 8090:8080.
 # Installation
 * (TBD) Clone this repository and install with the External Modules directions from REDCap
