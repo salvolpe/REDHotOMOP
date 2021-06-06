@@ -88,5 +88,6 @@ If you do not already have REDCap, you will need to contact a member of your ins
 * In order to access the Redmatch interface, you will need an account. To do so, after the Docker containers are running, navigate to http://localhost:10001/auth/admin/master/console/#/realms/Aehrc/users and add a new user.
   * After you have a user, you can login at http://localhost:8888
 * Redmatch and OMOPonFHIR both use 8080 as a default, so be sure to change the ports environment variable in the docker-compose.yml for Redmatch under keyclock to 8090:8080.
+* If you are running REDCap on your local machine, in order to access it from within the Redmatch docker instance you need to replace `localhost` in the API URL from REDCap with `host.docker.internal`
 # Installation
 * (TBD) Clone this repository and install with the External Modules directions from REDCap
