@@ -3,6 +3,8 @@ A tool that will allow researchers to leverage the benefits of two leading stand
 
 There have been recent efforts to combine each of these resources: REDCap and OMOP (at institutional levels); REDCap and FHIR ([Redmatch](https://github.com/aehrc/redmatch)); and [OMOPonFHIR](https://github.com/omoponfhir/omoponfhir-main) and more recently, there has been an announcement of an [official partnership](https://www.ohdsi.org/ohdsi-hl7-collaboration/) between HL7 and the OHDSI network who maintains OMOP. To our knowledge, however, there is no work that leverages all three resources into one system. As a result, we are developing a new system called **REDHot OMOP**
 
+Click [here](https://github.com/salvolpe/REDHotOMOP/blob/main/REDHot_OMOP_Abstract_2021.pdf) to read the recent conference abstract documenting the status of this project in greater detail (as of October 2021).
+
 # Dependencies
 All listed hyperlinks navigate to the intended release, which are also included above as submodules
 
@@ -18,7 +20,7 @@ REDCap v10.2.3
 * mvn - Recommended that you install through [homebrew](https://brew.sh) with `brew install mvn`
 
 # System Architecture
-![REDHot_OMOP_Prototype](https://user-images.githubusercontent.com/37944330/118322427-18a9ab00-b4cd-11eb-9859-0e6855aa0373.png)
+![REDHot_OMOP_Prototype](https://user-images.githubusercontent.com/37944330/140053395-a8e087f2-a6c2-4cdd-82a8-cf7333a52bb7.png)
 
 # Setup
 *How do you set up your environment correctly to use REDHotOMOP?*
